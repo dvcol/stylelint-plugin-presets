@@ -1,0 +1,96 @@
+{
+  "name": "@dvcol/stylelint-plugin-presets",
+  "version": "1.0.0",
+  "description": "Basic presets for stylelint",
+  "author": "dvcol",
+  "license": "MIT",
+  "keywords": [
+    "stylelint",
+    "stylelintplugin",
+    "stylelint-plugin"
+  ],
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">= 6.32.0"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "*.md",
+    "LICENSE",
+    "lib",
+    "config"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "watch": "npm run build -- --watch lib",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "release": "standard-version",
+    "changelog": "extract-changelog-release > RELEASE.md"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "stylelint": "^14.7.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-group-selectors": "^1.0.8",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-use-nesting": "^3.0.0",
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.3",
+    "postcss-html": "^1.4.1",
+    "prettier": "^2.6.2",
+    "requireindex": "^1.2.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.7.0",
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.3",
+    "postcss-html": "^1.4.1",
+    "prettier": "^2.6.2"
+  },
+  "peerDependenciesMeta": {
+    "postcss": {
+      "// required for": "vue",
+      "optional": true
+    },
+    "postcss-scss": {
+      "// required for": "vue",
+      "optional": true
+    },
+    "postcss-html": {
+      "// required for": "vue",
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@dvcol/eslint-plugin-presets": "^1.1.1",
+    "eslint": "^8.13.0",
+    "extract-changelog-release": "^1.0.2",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "postcss": "^8.4.12",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.6.2"
+  }
+}
