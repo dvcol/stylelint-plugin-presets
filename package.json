@@ -22,20 +22,13 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "watch": "npm run build -- --watch lib",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest",
     "release": "standard-version",
     "changelog": "extract-changelog-release > RELEASE.md"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "jest": {
-    "testMatch": [
-      "**/tests/**/*.js"
-    ]
   },
   "dependencies": {
     "stylelint": "^14.7.0",
@@ -88,9 +81,6 @@
     "eslint": "^8.13.0",
     "extract-changelog-release": "^1.0.2",
     "husky": "^7.0.4",
-    "jest": "^27.5.1",
-    "postcss": "^8.4.12",
-    "standard-version": "^9.3.2",
-    "typescript": "^4.6.2"
+    "standard-version": "^9.3.2"
   }
 }
