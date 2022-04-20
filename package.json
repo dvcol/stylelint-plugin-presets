@@ -31,46 +31,69 @@
     "access": "public"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "postcss": "^8.3.11",
+    "postcss-html": "^1.4.1",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.6.2",
+    "requireindex": "^1.2.0",
     "stylelint": "^14.7.0",
     "stylelint-a11y": "^1.2.3",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-config-css-modules": "^4.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-group-selectors": "^1.0.8",
     "stylelint-high-performance-animation": "^1.6.0",
     "stylelint-order": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
-    "stylelint-use-nesting": "^3.0.0",
-    "postcss": "^8.3.11",
-    "postcss-scss": "^4.0.3",
-    "postcss-html": "^1.4.1",
-    "prettier": "^2.6.2",
-    "requireindex": "^1.2.0",
-    "chalk": "^4.1.2",
-    "ora": "^5.4.1"
+    "stylelint-use-nesting": "^3.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.7.0",
     "postcss": "^8.3.11",
-    "postcss-scss": "^4.0.3",
     "postcss-html": "^1.4.1",
-    "prettier": "^2.6.2"
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.7.0"
+  },
+  "peerDependenciesConfigs": {
+    "scss": {
+      "postcss": "^8.3.11",
+      "postcss-scss": "^4.0.3",
+      "prettier": "^2.6.2",
+      "stylelint": "^14.7.0"
+    },
+    "vue": {
+      "postcss": "^8.3.11",
+      "postcss-html": "^1.4.1",
+      "postcss-scss": "^4.0.3",
+      "prettier": "^2.6.2",
+      "stylelint": "^14.7.0"
+    },
+    "less": {
+      "postcss": "^8.3.11",
+      "postcss-less": "^6.0.0",
+      "prettier": "^2.6.2",
+      "stylelint": "^14.7.0"
+    }
   },
   "peerDependenciesMeta": {
     "postcss": {
-      "// required for": "vue",
-      "optional": true
-    },
-    "postcss-scss": {
-      "// required for": "vue",
       "optional": true
     },
     "postcss-html": {
-      "// required for": "vue",
+      "optional": true
+    },
+    "postcss-less": {
+      "optional": true
+    },
+    "postcss-scss": {
       "optional": true
     }
   },
