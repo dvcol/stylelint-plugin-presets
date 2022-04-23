@@ -1,14 +1,27 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Release - Tag and release package
+name: Publish - Package release and publish
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:
+  push:
+    tags:
+      # Ignore release candidates
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
   workflow_dispatch:
+    inputs:
+      tagName:
+        description: 'Tag name'
+        required: false
+
+  workflow_run:
+    workflows: [ "Release - Tag and release package" ]
+    types: [ completed ]
 
 env:
   node_version: 16.x
@@ -39,21 +52,25 @@ jobs:
 
       - name: install dependencies
         run: pnpm install
+        
+      - name: Publish to npm
+        run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Release
-        run: |
-          # setup git creds
-          git config user.name "GitHub Release Bot"
-          git config user.email "<>"
-          
-          # generate release
-          yarn release
+      - name: Generate Release changelog
+        run: pnpm run release:changelog
 
-      - name: Push to remote
+      - name: Fetch latest tag
+        if: ${{ github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.event.inputs.tagName == '') }}
+        id: latest-tag
         run: |
-          # Check status
-          git status
-          git diff --color -U0 | cat
-          
-          # push changes
-          git push origin --follow-tags
+          tag_name=$(git describe --abbrev=0)
+          echo "Tag found: '$tag_name'"
+          echo "::set-output name=TAG_NAME::$tag_name"
+
+      - name: Push Release to github
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.event.inputs.tagName || steps.latest-tag.outputs.TAG_NAME || github.ref}}
+          body_path: RELEASE.md

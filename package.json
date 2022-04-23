@@ -25,7 +25,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "standard-version",
-    "changelog": "extract-changelog-release > RELEASE.md"
+    "release:changelog": "extract-changelog-release > RELEASE.md"
   },
   "publishConfig": {
     "access": "public"
