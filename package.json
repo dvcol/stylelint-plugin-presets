@@ -2,19 +2,19 @@
   "name": "@dvcol/stylelint-plugin-presets",
   "version": "1.1.0",
   "description": "Basic presets for stylelint",
-  "author": "dvcol",
+  "keywords": [
+    "stylelint",
+    "stylelintplugin",
+    "stylelint-plugin"
+  ],
   "license": "MIT",
+  "author": "dvcol",
   "homepage": "https://github.com/dvcol/stylelint-plugin-presets",
   "bugs": "https://github.com/dvcol/stylelint-plugin-presets/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/dvcol/stylelint-plugin-presets.git"
   },
-  "keywords": [
-    "stylelint",
-    "stylelintplugin",
-    "stylelint-plugin"
-  ],
   "engines": {
     "node": ">=16",
     "pnpm": ">= 6.32.0"
@@ -36,58 +36,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "ora": "^5.4.1",
-    "postcss": "^8.3.11",
-    "postcss-html": "^1.4.1",
-    "postcss-less": "^6.0.0",
-    "postcss-scss": "^4.0.3",
-    "prettier": "^2.6.2",
-    "requireindex": "^1.2.0",
-    "stylelint": "^14.7.0",
-    "stylelint-a11y": "^1.2.3",
-    "stylelint-config-css-modules": "^4.1.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-config-standard-vue": "^1.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
-    "stylelint-group-selectors": "^1.0.8",
-    "stylelint-high-performance-animation": "^1.6.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-prettier": "^2.0.0",
-    "stylelint-use-nesting": "^3.0.0"
-  },
   "peerDependencies": {
     "postcss": "^8.3.11",
     "postcss-html": "^1.4.1",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.3",
     "prettier": "^2.6.2",
-    "stylelint": "^14.7.0"
-  },
-  "peerDependenciesConfigs": {
-    "scss": {
-      "postcss": "^8.3.11",
-      "postcss-scss": "^4.0.3",
-      "prettier": "^2.6.2",
-      "stylelint": "^14.7.0"
-    },
-    "vue": {
-      "postcss": "^8.3.11",
-      "postcss-html": "^1.4.1",
-      "postcss-scss": "^4.0.3",
-      "prettier": "^2.6.2",
-      "stylelint": "^14.7.0"
-    },
-    "less": {
-      "postcss": "^8.3.11",
-      "postcss-less": "^6.0.0",
-      "prettier": "^2.6.2",
-      "stylelint": "^14.7.0"
-    }
+    "stylelint": "^15.0.0"
   },
   "peerDependenciesMeta": {
     "postcss": {
@@ -103,13 +58,58 @@
       "optional": true
     }
   },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "ora": "^6.0.0",
+    "postcss": "^8.3.11",
+    "postcss-html": "^1.4.1",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.6.2",
+    "requireindex": "^1.2.0",
+    "stylelint": "^14.16.1",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.0",
+    "stylelint-config-standard-scss": "^7.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-group-selectors": "^1.0.8",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-order": "^6.0.0",
+    "stylelint-prettier": "^3.0.0",
+    "stylelint-use-nesting": "^4.0.0"
+  },
+  "peerDependenciesConfigs": {
+    "scss": {
+      "postcss": "^8.3.11",
+      "postcss-scss": "^4.0.3",
+      "prettier": "^2.6.2",
+      "stylelint": ">= 14"
+    },
+    "vue": {
+      "postcss": "^8.3.11",
+      "postcss-html": "^1.4.1",
+      "postcss-scss": "^4.0.3",
+      "prettier": "^2.6.2",
+      "stylelint": ">= 14"
+    },
+    "less": {
+      "postcss": "^8.3.11",
+      "postcss-less": "^6.0.0",
+      "prettier": "^2.6.2",
+      "stylelint": "^14.7.0"
+    }
+  },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
     "@dvcol/eslint-plugin-presets": "^1.1.1",
     "eslint": "^8.13.0",
     "extract-changelog-release": "^1.0.2",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "standard-version": "^9.3.2",
     "typescript": "latest"
   },
