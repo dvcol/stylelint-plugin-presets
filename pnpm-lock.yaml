@@ -19,7 +19,6 @@ specifiers:
   stylelint: ^15.3.0
   stylelint-a11y: ^1.2.3
   stylelint-config-css-modules: ^4.2.0
-  stylelint-config-prettier: ^9.0.5
   stylelint-config-rational-order: ^0.1.2
   stylelint-config-standard: ^31.0.0
   stylelint-config-standard-scss: ^7.0.1
@@ -44,7 +43,6 @@ dependencies:
   stylelint: 15.3.0
   stylelint-a11y: 1.2.3_stylelint@15.3.0
   stylelint-config-css-modules: 4.2.0_stylelint@15.3.0
-  stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-rational-order: 0.1.2
   stylelint-config-standard: 31.0.0_stylelint@15.3.0
   stylelint-config-standard-scss: 7.0.1_xd434hbhlikjpobg3rgppuzh3e
@@ -6880,16 +6878,6 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.3.0
-    dev: false
-
-  /stylelint-config-prettier/9.0.5_stylelint@15.3.0:
-    resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>= 11.x < 15'
-    dependencies:
       stylelint: 15.3.0
     dev: false
 
