@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/dvcol/stylelint-plugin-presets/compare/v1.1.1...v1.1.2) (2023-03-31)
+
+
+### Bug Fixes
+
+* **a11y:** fix conflicting rules ([7a083d2](https://github.com/dvcol/stylelint-plugin-presets/commit/7a083d277e7665ff6f1a48d82086c2006aff488f))
+
 ### [1.1.1](https://github.com/dvcol/stylelint-plugin-presets/compare/v1.1.0...v1.1.1) (2023-03-22)
 
 ## [1.1.0](https://github.com/dvcol/stylelint-plugin-presets/compare/v1.0.1...v1.1.0) (2022-04-23)
