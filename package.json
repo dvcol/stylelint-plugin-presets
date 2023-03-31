@@ -76,7 +76,6 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-group-selectors": "^1.0.9",
-    "stylelint-high-performance-animation": "^1.8.0",
     "stylelint-order": "^6.0.3",
     "stylelint-prettier": "^3.0.0",
     "stylelint-use-nesting": "^4.1.0"
@@ -115,9 +114,13 @@
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
+        "svelte",
         "@babel/plugin-syntax-flow",
         "@babel/plugin-transform-react-jsx"
-      ]
+      ],
+      "allowedVersions": {
+        "stylelint": ">=15"
+      }
     }
   }
 }

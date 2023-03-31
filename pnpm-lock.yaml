@@ -25,7 +25,6 @@ specifiers:
   stylelint-config-standard-vue: ^1.0.0
   stylelint-declaration-block-no-ignored-properties: ^2.7.0
   stylelint-group-selectors: ^1.0.9
-  stylelint-high-performance-animation: ^1.8.0
   stylelint-order: ^6.0.3
   stylelint-prettier: ^3.0.0
   stylelint-use-nesting: ^4.1.0
@@ -49,7 +48,6 @@ dependencies:
   stylelint-config-standard-vue: 1.0.0_o7z2z2yv565o3a3uaodintvte4
   stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.3.0
   stylelint-group-selectors: 1.0.9_stylelint@15.3.0
-  stylelint-high-performance-animation: 1.8.0_stylelint@15.3.0
   stylelint-order: 6.0.3_stylelint@15.3.0
   stylelint-prettier: 3.0.0_7ec2o7xgwtp77vdznqndf7abne
   stylelint-use-nesting: 4.1.0_stylelint@15.3.0
@@ -6999,15 +6997,6 @@ packages:
     dependencies:
       md5: 2.3.0
       postcss: 8.4.21
-      stylelint: 15.3.0
-    dev: false
-
-  /stylelint-high-performance-animation/1.8.0_stylelint@15.3.0:
-    resolution: {integrity: sha512-wxHt+F7Z54mtGZpbdMwUtpfQwr81uiml39EFCCdZAbVnEO7Wl0Mh5ncmgbxH42xpB5z79eIgHI62qtKfUmWzhg==}
-    peerDependencies:
-      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
-    dependencies:
-      postcss-value-parser: 4.2.0
       stylelint: 15.3.0
     dev: false
 
