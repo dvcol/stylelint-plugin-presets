@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['stylelint-a11y/recommended'],
   rules: {
-    'a11y/media-prefers-reduced-motion': 'off',
+    'a11y/media-prefers-reduced-motion': null,
   },
 };
