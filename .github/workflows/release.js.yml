@@ -27,6 +27,7 @@ jobs:
       - name: Checkout branch ${{ github.ref }}
         uses: actions/checkout@v3
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup pnpm ${{ env.pnpm_version }}
@@ -71,6 +72,7 @@ jobs:
       - name: Checkout branch ${{ github.ref }}
         uses: actions/checkout@v3
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup pnpm ${{ env.pnpm_version }}
