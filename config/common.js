@@ -4,7 +4,6 @@ module.exports = {
     'stylelint-config-rational-order',
     'stylelint-config-css-modules',
     'stylelint-config-html',
-    './prettier',
   ],
   plugins: [
     'stylelint-declaration-block-no-ignored-properties',
@@ -17,6 +16,7 @@ module.exports = {
     'plugin/stylelint-group-selectors': true,
     'csstools/use-nesting': true,
     '@dvcol/progress': false,
+    'selector-type-no-unknown': 'off',
   },
   overrides: [
     {

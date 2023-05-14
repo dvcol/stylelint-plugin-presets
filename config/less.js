@@ -1,4 +1,7 @@
 module.exports = {
-  extends: ['./common'],
+  extends: [
+    './common',
+    './prettier',
+  ],
   customSyntax: 'postcss-less',
 };
