@@ -3,6 +3,9 @@ module.exports = {
     'stylelint-config-standard-scss',
     './common',
   ],
+  rules: {
+    'at-rule-no-unknown': null,
+  },
   overrides: [
     {
       files: ['**/*.svelte', '**/*.svx'],

@@ -16,7 +16,7 @@ module.exports = {
     'plugin/stylelint-group-selectors': true,
     'csstools/use-nesting': true,
     '@dvcol/progress': false,
-    'selector-type-no-unknown': 'off',
+    'selector-type-no-unknown': null,
   },
   overrides: [
     {
