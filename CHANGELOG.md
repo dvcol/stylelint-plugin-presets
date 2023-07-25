@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/dvcol/stylelint-plugin-presets/compare/v1.2.0...v1.2.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **svelte:** fix scss rules for svelte config ([5d68d12](https://github.com/dvcol/stylelint-plugin-presets/commit/5d68d1233f196d577b2ece1ccddee25dbca05fbb))
+
 ## [1.2.0](https://github.com/dvcol/stylelint-plugin-presets/compare/v1.1.5...v1.2.0) (2023-05-14)
 
 
