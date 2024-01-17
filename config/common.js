@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: [
     'stylelint-config-rational-order',
     'stylelint-config-css-modules',
@@ -12,8 +12,7 @@ module.exports = {
   rules: {
     'plugin/declaration-block-no-ignored-properties': true,
     'plugin/stylelint-group-selectors': true,
-    'csstools/use-nesting': true,
-    '@dvcol/progress': false,
+    '@dvcol/progress': true,
     'selector-type-no-unknown': null,
   },
   overrides: [

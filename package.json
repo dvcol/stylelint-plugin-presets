@@ -16,6 +16,7 @@
     "type": "git",
     "url": "https://github.com/dvcol/stylelint-plugin-presets.git"
   },
+  "type": "module",
   "engines": {
     "node": ">=18",
     "pnpm": ">= 8.0.0"
