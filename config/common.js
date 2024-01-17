@@ -8,7 +8,6 @@ module.exports = {
   plugins: [
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-group-selectors',
-    'stylelint-use-nesting',
     '../lib',
   ],
   rules: {
