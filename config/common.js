@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    './a11y',
     'stylelint-config-rational-order',
     'stylelint-config-css-modules',
     'stylelint-config-html',
