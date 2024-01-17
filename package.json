@@ -1,6 +1,6 @@
 {
   "name": "@dvcol/stylelint-plugin-presets",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "packageManager": "pnpm@8.14.1",
   "description": "Basic presets for stylelint",
   "keywords": [

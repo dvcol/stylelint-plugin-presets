@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/dvcol/stylelint-plugin-presets/compare/v2.0.2...v2.0.3) (2024-01-17)
+
+
+### Bug Fixes
+
+* **common:** remove deleted a11y ([9401fbb](https://github.com/dvcol/stylelint-plugin-presets/commit/9401fbb7264faa9816b5570d8fea89eb46a50a0b))
+
 ### [2.0.2](https://github.com/dvcol/stylelint-plugin-presets/compare/v2.0.1...v2.0.2) (2024-01-17)
 
 ### [2.0.1](https://github.com/dvcol/stylelint-plugin-presets/compare/v2.0.0...v2.0.1) (2024-01-17)
