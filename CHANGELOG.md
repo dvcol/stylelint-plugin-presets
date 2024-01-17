@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/dvcol/stylelint-plugin-presets/compare/v2.0.3...v2.1.0) (2024-01-17)
+
+
+### Features
+
+* **build:** moves to esm ([49bec72](https://github.com/dvcol/stylelint-plugin-presets/commit/49bec7232f4ecc7a38af1bd96b45f300c644a299))
+
 ### [2.0.3](https://github.com/dvcol/stylelint-plugin-presets/compare/v2.0.2...v2.0.3) (2024-01-17)
 
 
