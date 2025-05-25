@@ -1,5 +1,0 @@
-{
-  "root": true,
-  "plugins": ["@dvcol/presets"],
-  "extends": ["plugin:@dvcol/presets/base"]
-}
