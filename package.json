@@ -2,7 +2,7 @@
   "name": "@dvcol/stylelint-plugin-presets",
   "type": "module",
   "version": "2.1.2",
-  "packageManager": "pnpm@8.14.1",
+  "packageManager": "pnpm@10.10.0",
   "description": "Basic presets for stylelint",
   "keywords": [
     "stylelint",
