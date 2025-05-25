@@ -1,5 +1,6 @@
 {
   "name": "@dvcol/stylelint-plugin-presets",
+  "type": "module",
   "version": "2.1.2",
   "packageManager": "pnpm@8.14.1",
   "description": "Basic presets for stylelint",
@@ -16,7 +17,6 @@
     "type": "git",
     "url": "https://github.com/dvcol/stylelint-plugin-presets.git"
   },
-  "type": "module",
   "engines": {
     "node": ">=18",
     "pnpm": ">= 8.0.0"
@@ -69,17 +69,17 @@
     "postcss-scss": "^4.0.6",
     "prettier": "^3.2.4",
     "requireindex": "^1.2.0",
-    "stylelint": "^16.1.0",
+    "stylelint": "^16.19.1",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-group-selectors": "^1.0.10",
-    "stylelint-order": "^6.0.4",
-    "stylelint-prettier": "^5.0.0"
+    "stylelint-order": "^7.0.0",
+    "stylelint-prettier": "^5.0.3"
   },
   "peerDependenciesConfigs": {
     "scss": {
